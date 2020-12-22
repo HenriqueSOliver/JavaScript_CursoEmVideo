@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+    <style>
+        
+        body {
+            background-color: black;
+            color:darkgrey;
+            font: 15pt Comic;
+        }  
+        h1{
+            color:darkorange;
+        }      
+    </style>
+
+</head>
+<body>
+    <h1>Conhecendo o usuário</h1>
+
+    <script>
+    var nome = window.prompt('Qual é o seu nome?')
+    window.alert ('É um prazer em te conhecer, ' +nome)
+    var apelido = window.prompt('Como você gostaria de ser chamado?')
+    document.write(`<strong>${apelido}</strong>, você sabia que o seu apelido tem <strong>${apelido.length}</strong> letras? <br/>`) 
+    document.write(`<strong>Meu!</strong> alguma vez somou a quantidade de letras do seu nome '<strong>${nome}'</strong>  que tem <strong>${nome.length}</strong> letras! </br> `)
+    var n1_apelido = Number.parseInt(apelido.length)
+    var n2_nome = Number.parseInt(nome.length)
+    var s_nome = n1_apelido + n2_nome
+    var s2_nome = parseInt(n1_apelido)*parseInt(n2_nome)
+    var s3_nome = parseInt(n1_apelido) / parseInt(n2_nome)
+
+    document.write(`Por acaso, você já somou a quantidade de letras do seu nome <strong>+</strong> a quantidade de letras do seu apelido ?<br/>`)
+    
+    document.write(`Que é igual à <strong>${nome.length}</strong> + <strong>${apelido.length}</strong> = <strong>${s_nome}</strong><br/>`)
+    
+    document.write(`Maaaaaaaaaaaas aposto, que você nunca multiplicou esses números: <strong>${nome.length}</strong> x <strong>${apelido.length} =  <strong>${s2_nome}</strong><br/>`)
+    
+    document.write (`Também acredito que nunca dividiu esses números!<br/>`)
+    document.write (`Nome = ${nome.length} / o por apelido = ${apelido.length}, chegaremos ao resultado = ${s3_nome}<br/>`)
+
+    </script>
+
+    <h2>Você sabe que isso quer dizer? </h2>
+            
+            <button onclick="sim()"> Sim </button> 
+            
+            <button onclick="nao()"> Não </button>
+            <p id="sim"></p> <p2 id="nao"></p2> 
+            
+            </div>
+            <script>
+                function sim() {
+                    document.getElementById("sim").innerHTML = 'Nada! Apenas estava puxando assuntos kkkkk';
+                    document.getElementById("sim").style.visibility = "hidden";
+
+                }
+                function nao() {
+                    document.getElementById("sim").style.visibility = "hidden";
+                    document.getElementById("nao").innerHTML = 'Apenas estava puxando assuntos kkkkk';
+                }
+            </script>
+     
+     
+     
+     
+     <h3 class="text-hide" style="background-image: url('http://4.bp.blogspot.com/-1d3QyAd2vpA/VaOj79ycG-I/AAAAAAAARbM/zr61MN-zQDc/s1600/Mostrar%2Ba%2Blingua%2Bn%25C3%25A3o%2B%25C3%25A9%2Bmais%2Bfeio.gif'); width: 400px; height: 400px;"></h3>
+
+    
+
+</body>
+</html>

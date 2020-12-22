@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questionário</title>
+</head>
+<body>
+
+        <h1>Nacionalidade</h1>
+        Qual é o seu país de origem? <input type="text" name="localidade" id="localidade_usuario">
+        <input type="button" value="Consultar" onclick="text()">
+        <div id="res"> 
+        
+        </div>
+        <script>
+            function text() {
+                var pais = 'Brasil'
+                var res = window.document.querySelector('div#res')
+                var loc_usuario = window.document.querySelector('input#localidade_usuario')         
+                if (localidade_usuario.value =='Brasil') {
+                    res.innerHTML = 'Você é Brasileiro!'
+                    } else {
+                        res.innerHTML = 'Então você é estrangeiro!'
+                    }
+                }
+
+            
+                
+        </script>
+</body>
+</html>
